@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title th:text = "|${title}|"/>
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" th:href="@{/styles/home.css}">
 </head>
 <body>
 <!-- Шапка -->
@@ -31,7 +31,7 @@
   <div class="products">
     <!-- Карточка товара 1 -->
     <div class="product-card">
-      <img src="src/iphone16.png" alt="iPhone 16">
+      <img th:src="@{/images/iphone16.png}" alt="iPhone 16">
       <div class="definitionProduct">
         <h3>iPhone 16 32/526 Gb</h3>
         <p class="price">125 000 ₽</p>
@@ -41,7 +41,7 @@
 
     <!-- Карточка товара 2 -->
     <div class="product-card">
-      <img src="src/macbookAir13.webp" alt="MacBook Air">
+      <img th:src="@{/images/macbookAir13.webp}" alt="MacBook Air">
       <div class="definitionProduct">
         <h3>MacBook Air 13 M2</h3>
         <p class="price">105 000 ₽</p>
@@ -51,7 +51,7 @@
 
     <!-- Карточка товара 3 -->
     <div class="product-card">
-      <img src="src/airPodsMax.webp" alt="AirPods Max">
+      <img th:src="@{/images/airPodsMax.webp}" alt="AirPods Max">
       <div class="definitionProduct">
         <h3>AirPods Max</h3>
         <p class="price">50 000 ₽</p>
@@ -61,7 +61,7 @@
 
     <!-- Карточка товара 4 -->
     <div class="product-card">
-      <img src="src/appleWatch10.webp" alt="Apple Watch">
+      <img th:src="@{/images/appleWatch10.webp}" alt="Apple Watch">
       <div class="definitionProduct">
         <h3>Apple Watch 10</h3>
         <p class="price">40 000 ₽</p>
