@@ -13,4 +13,9 @@ public class MainController {
         return "home";
     }
 
+    @GetMapping("/search")
+    public String search(Model model) {
+        model.addAttribute("title", "Поиск");
+        return "search";
+    }
 }

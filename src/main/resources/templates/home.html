@@ -12,7 +12,9 @@
   <div class="logo">Breyfogel</div>
   <div class="search">
     <input type="text" placeholder="Найти на Breyfogel...">
-    <button>Найти</button>
+    <a th:href="@{/search}">
+      <button class="search-btn">Найти</button>
+    </a>
   </div>
   <div class="cart">Корзина 🛒 (0)</div>
 </header>
